@@ -1,0 +1,106 @@
+<!-- New Folder Modal -->
+<div id="newFolderModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50 hidden modal">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-96">
+        <h2 class="text-2xl font-semibold mb-4">Create New Folder</h2>
+        <input type="text" id="newFolderName" placeholder="Enter folder name" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        <select id="colorSelectorFolder">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="orange">Orange</option>
+        </select>
+        <div class="flex justify-end space-x-2">
+            <button id="createFolderBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Create Folder</button>
+            <button class="closeModal bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Folder Modal -->
+<div id="editFolderModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50 hidden modal">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-96">
+        <h2 class="text-2xl font-semibold mb-4">Edit Folder</h2>
+        <input type="text" id="editFolderName" placeholder="Enter folder name" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        <select id="editColorSelectorFolder" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="orange">Orange</option>
+        </select>
+        <div class="flex justify-end space-x-2">
+            <button id="updateFolderBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Update Folder</button>
+            <button class="closeModal bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- New Note Modal -->
+<div id="newNoteModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50 hidden modal">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-96">
+        <h2 class="text-2xl font-semibold mb-4">Create New Note</h2>
+        <input type="date" id="newNoteDate" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        
+        <!-- Time input -->
+        <input type="text" id="newNoteTime" placeholder="Enter time (e.g., 10:30 AM)" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+
+        
+        <input type="text" id="newNoteTitle" placeholder="Enter note title" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        <textarea id="newNoteDescription" placeholder="Enter note description" class="w-full p-2 border border-gray-300 rounded-md mb-4" rows="4"></textarea>
+        <input type="text" id="newNoteFolder" placeholder="Enter folder name" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        
+        <!-- Color input -->
+        <select id="colorSelector" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="orange">Orange</option>
+        </select>
+
+        <div class="flex justify-end space-x-2">
+            <button id="createNoteBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Create Note</button>
+            <button class="closeModal bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Note Modal -->
+<div id="editNoteModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50 hidden modal">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-96">
+        <h2 class="text-2xl font-semibold mb-4">Edit Note</h2>
+        <input type="date" id="editNoteDate" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        
+        <!-- Time input -->
+        <input type="text" id="editNoteTime" placeholder="Enter time (e.g., 10:30 AM)" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+
+        
+        <input type="text" id="editNoteTitle" placeholder="Enter note title" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        <textarea id="editNoteDescription" placeholder="Enter note description" class="w-full p-2 border border-gray-300 rounded-md mb-4" rows="4"></textarea>
+        <input type="text" id="editNoteFolder" placeholder="Enter folder name" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        
+        <!-- Color input -->
+        <select id="editColorSelector" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="orange">Orange</option>
+        </select>
+
+        <div class="flex justify-end space-x-2">
+            <button id="updateNoteBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Update Note</button>
+            <button class="closeModal bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Cancel</button>
+        </div>
+    </div>
+</div>
+
