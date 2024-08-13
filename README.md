@@ -3,6 +3,7 @@
 ## Overview
 
 This is a Todo Web App that allows users to manage tasks and folders. Users can create, update, delete, and organize tasks into folders. Each folder can be assigned a color, and tasks within folders can also be color-coded. The latest tasks are sorted and appear at the top. When a folder is deleted, all tasks associated with that folder are also deleted.
+![Todo Web App Screenshot](tofo.PNG)
 
 ## Features
 
